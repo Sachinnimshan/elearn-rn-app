@@ -12,7 +12,7 @@ const App =() => {
   return (
    <NavigationContainer>
      <stack.Navigator>
-       <stack.Screen name='Login' component={AddCourse}
+       <stack.Screen name='Login' component={Login}
        options={{
          headerShown: false
        }} />

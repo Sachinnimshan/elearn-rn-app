@@ -4,8 +4,9 @@ import { View, Text, TextInput, StyleSheet } from 'react-native'
 const FieldInput = (props) => {
     return (
         <View style={styles.txtfield}>
-            <TextInput style={styles.inputfield} placeholder={props.placeholder}
-            multiline={props.multiline} numberOfLines={props.numberOfLines}/>
+            <TextInput value={props.value} style={styles.inputfield} placeholder={props.placeholder}
+            multiline={props.multiline} numberOfLines={props.numberOfLines}
+            onChangeText={props.onChange} name={props.name}/>
         </View>
     );
 }

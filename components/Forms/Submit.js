@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet, TouchableOpacity } from 'react-native'
 const Submit = (props) => {
     return (
         <View>
-            <TouchableOpacity style={styles.btnsubmit}>
+            <TouchableOpacity style={styles.btnsubmit} onPress={props.onPress}>
                 <Text style={styles.btntitle}>{props.title}</Text>
             </TouchableOpacity>
         </View>
